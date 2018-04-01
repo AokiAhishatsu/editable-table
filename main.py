@@ -20,18 +20,18 @@ def index():
 	with open("./" + ID + ".json", "r", encoding='utf-8') as infile:
 		data = json.load(infile)
 	table = "<table id='" + ID + "'>\n"
-	for a, b in data.items():
+	for a, b in sorted(data.items()):
 		if a == "caption":
 			table += "\t<caption><input type='text' value='{}'></caption>\n".format(b)
 		if a == "headers":
 			table += "\t<tr>\n"
-			for _, c in b.items():
+			for _, c in sorted(b.items()):
 				table += "\t\t<th><input type='text' value='{}'></td>\n".format(c)
 			table += "\t</tr>\n"
 		if a == "rows":
-			for _, c in b.items():
+			for _, c in sorted(b.items()):
 				table += "\t<tr>\n"
-				for _, d in c.items():
+				for _, d in sorted(c.items()):
 					table += "\t\t<td><input type='text' value='{}'></td>\n".format(d)
 				table += "\t</tr>\n"
 
