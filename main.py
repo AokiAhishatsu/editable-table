@@ -7,12 +7,12 @@ ID = "xtable1"
 
 @route('/js/<filename>')
 def send_static(filename):
-	return static_file(filename, root="./js")
+	return static_file(filename, root="js")
 
 
 @route('/css/<filename>')
 def send_static(filename):
-	return static_file(filename, root="./css")
+	return static_file(filename, root="css")
 
 
 @route("/table")
