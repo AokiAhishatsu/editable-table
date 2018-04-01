@@ -1,0 +1,35 @@
+{
+	"caption": "Test Table",
+	"headers": {
+		"0": "Heading1",
+		"1": "Heading2",
+		"2": "Heading3",
+		"3": "Heading4"
+	},
+	"rows": {
+		"1": {
+			"0": "Data11",
+			"1": "Data12",
+			"2": "Data13",
+			"3": "Data14"
+		},
+		"2": {
+			"0": "Data21",
+			"1": "Data22",
+			"2": "Data23",
+			"3": "Data24"
+		},
+		"3": {
+			"0": "Data31",
+			"1": "Data32",
+			"2": "Data33",
+			"3": "Data34"
+		},
+		"4": {
+			"0": "Data41",
+			"1": "Data42",
+			"2": "Data43",
+			"3": "Data44"
+		}
+	}
+}
