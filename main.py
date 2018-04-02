@@ -26,7 +26,7 @@ def index():
 		if a == "headers":
 			table += "\t<tr>\n"
 			for _, c in sorted(b.items()):
-				table += "\t\t<th><input type='text' value='{}'></td>\n".format(c)
+				table += "\t\t<th><input type='text' value='{}'></th>\n".format(c)
 			table += "\t</tr>\n"
 		if a == "rows":
 			for _, c in sorted(b.items()):
